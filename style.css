@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-touch-callout: none; /* iOS Safari                         */
+  -webkit-user-select: none; /* Safari                             */
+  -khtml-user-select: none; /* Konqueror HTML                     */
+  -moz-user-select: none; /* Firefox in the past (old versions) */
+  -ms-user-select: none; /* Internet Explorer (>=10) / Edge    */
+  user-select: none;
+}
+body {
+  background-image: linear-gradient(
+    to right,
+    rgba(204, 92, 92, 0.8),
+    rgba(179, 37, 37, 0.9)
+  );
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  display: flex;
+}
+.section1 {
+  width: 500px;
+  height: 600px;
+  background: rgb(221, 202, 208);
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+}
+.section2 {
+  width: 500px;
+  height: 600px;
+  background: rgb(221, 202, 208);
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+.btn1,
+.btn2,
+.btn3 {
+  position: absolute;
+  width: 160px;
+  height: 55px;
+  background-color: rgba(230, 223, 223, 0.8);
+  left: 50%;
+  z-index: 10;
+  font-size: px;
+  border-radius: 100px 100px 100px 100px;
+  line-height: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Prompt";
+  font-weight: 600;
+
+  /* backdrop-filter: blur(10px); */
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+  cursor: pointer;
+  background-color: rgba(211, 204, 204, 0.8);
+}
+
+.player1,
+.player2,
+.points1,
+.points2 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: "Prompt";
+}
+
+.points1,
+.points2 {
+  font-size: 70px;
+}
+
+.btn1 {
+  transform: translate(-50%, 50px);
+}
+.btn2 {
+  transform: translate(-50%, 350px);
+}
+.btn3 {
+  transform: translate(-50%, 450px);
+}
+.dice {
+  position: absolute;
+  transform: translate(-50%, 160px);
+  height: 100px;
+  left: 50%;
+  z-index: 10;
+  line-height: 55px;
+  text-align: center;
+  text-transform: uppercase;
+
+  /* backdrop-filter: blur(10px); */
+}
+.score1-box,
+.score2-box {
+  background-color: rgba(255, 255, 255, 0.705);
+  text-align: center;
+  width: 200px;
+  height: 120px;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -90%);
+  border-radius: 10px;
+}
+
+.opa {
+  opacity: 0.3;
+}
+.hidden {
+  display: none;
+}
+
+.current1,
+.current2 {
+  padding-top: 25px;
+  margin-top: 30px;
+  font-family: "Prompt";
+  text-transform: uppercase;
+  font-size: 17px;
+}
+.poi1,
+.poi2 {
+  margin-top: 7px;
+  font-size: 35px;
+  font-family: "Prompt";
+  text-transform: uppercase;
+}
+.opa {
+  opacity: 0.8;
+}
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn1:active {
+  transform: translate(-50%, 53px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+.btn2:active {
+  transform: translate(-50%, 353px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn3:active {
+  transform: translate(-50%, 453px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn1:focus,
+.btn2:focus,
+.btn3:focus {
+  outline: none;
+}
